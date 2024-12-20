@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Monserrat', 'sans-serif']
+        'sans': ['Montserrat', 'sans-serif'],
       }
     },
   },
