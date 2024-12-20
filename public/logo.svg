@@ -8,21 +8,21 @@
   <!-- Внешний шестиугольник для ассоциации с разработкой и стилем веб 3.0 -->
   <polygon 
     points="50,5 93,25 93,75 50,95 7,75 7,25" 
-    stroke="#8A2BE2" 
+    stroke="#077757" 
     stroke-width="4" 
     fill="none" />
   
   <!-- Символ "</>" для обозначения кода -->
   <path 
     d="M30 40 L40 50 L30 60" 
-    stroke="#8A2BE2" 
+    stroke="#077757" 
     stroke-width="4" 
     stroke-linecap="round" 
     stroke-linejoin="round" />
   
   <path 
     d="M70 40 L60 50 L70 60" 
-    stroke="#8A2BE2" 
+    stroke="#077757" 
     stroke-width="4" 
     stroke-linecap="round" 
     stroke-linejoin="round" />
@@ -33,7 +33,7 @@
     y="45" 
     width="10" 
     height="10" 
-    fill="#8A2BE2" 
+    fill="#077757" 
     rx="2" />
   
 </svg>
