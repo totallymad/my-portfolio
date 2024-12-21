@@ -12,6 +12,11 @@ const skillItem = [
     desc: "Пользовательский интерфейс",
   },
   {
+    imgSrc: "/scss.svg",
+    label: "SCSS",
+    desc: "Пользовательский интерфейс",
+  },
+  {
     imgSrc: "/javascript.svg",
     label: "JavaScript",
     desc: "Интерактивность",
@@ -35,7 +40,7 @@ const skillItem = [
 
 export default function Skill() {
   return (
-    <section className="section">
+    <section className="section mt-10">
       <div className="container">
         <h2 className="headline-2">Основные инструменты, которые я использую</h2>
         <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch]">

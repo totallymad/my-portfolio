@@ -1,69 +1,30 @@
-// // Import Swiper React components
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import CircleProgress from "./CircleProgress";
-
-// // Import Swiper styles
-// import "swiper/css";
-// import "swiper/css/pagination";
-
-// // import required modules
-// import { Pagination } from "swiper/modules";
-
-// export default function Slider() {
-//   return (
-//     <div className="container">
-//       <Swiper
-//         slidesPerView={3}
-//         spaceBetween={30}
-//         pagination={{
-//           clickable: true,
-//         }}
-//         modules={[Pagination]}
-//         className="slider"
-//       >
-//         <SwiperSlide>
-//           <CircleProgress percentage={90} label="Разработка" />
-//         </SwiperSlide>
-//         <SwiperSlide>
-//           <CircleProgress percentage={80} label="Дизайн" />
-//         </SwiperSlide>
-//         <SwiperSlide><CircleProgress percentage={95} label="Работа в команде" /></SwiperSlide>
-//         <SwiperSlide>Slide 4</SwiperSlide>
-//         <SwiperSlide>Slide 5</SwiperSlide>
-//         <SwiperSlide>Slide 6</SwiperSlide>
-//         <SwiperSlide>Slide 7</SwiperSlide>
-//         <SwiperSlide>Slide 8</SwiperSlide>
-//         <SwiperSlide>Slide 9</SwiperSlide>
-//       </Swiper>
-//     </div>
-//   );
-// }
-
 // Slider.js
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css"; // Импорт стилей для Swiper
+import "swiper/css"; // Основные стили Swiper
 import CircleProgress from "./CircleProgress";
+import { Autoplay } from "swiper/modules"; // Импортируем только Autoplay
 
 const Slider = () => {
   return (
-    <div style={{ width: "80%", margin: "auto" }}>
+    <div className="container mt-10 relative">
       <Swiper
+        modules={[Autoplay]} // Подключаем только Autoplay
         spaceBetween={10} // Расстояние между слайдами
         slidesPerView={1} // Количество отображаемых слайдов
-        // loop={true} // Зацикливаем слайдер
-        navigation // Навигация (стрелки вперед/назад)
+        loop={true} // Зацикливаем слайдер
+        autoplay={{
+          delay: 3000, // Задержка в миллисекундах (3 секунды)
+          disableOnInteraction: true, // Продолжать автопрокрутку после взаимодействия
+        }}
         breakpoints={{
-          // when window width is >= 320px
           320: {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          // when window width is >= 480px
           480: {
             slidesPerView: 3,
             spaceBetween: 30,
           },
-          // when window width is >= 640px
           640: {
             slidesPerView: 4,
             spaceBetween: 40,

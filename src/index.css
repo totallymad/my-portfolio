@@ -64,10 +64,6 @@ ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 active:scale-95 transi
   @apply bg-zinc-50 text-zinc-900 active:bg-zinc-50/80 active:scale-95 transition;
 }
 
-/* .slider {
-  @apply w-full h-96;
-} */
-/* 
-.swiper-slide {
-  margin-right: 0;
-} */
+.swiper-button-prev {
+  color: #eee;
+}

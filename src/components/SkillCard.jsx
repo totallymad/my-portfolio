@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
-export default function SkillCard({ imgSrc, label, desc, classes }) {
-  const a = classes;
+export default function SkillCard({ imgSrc, label, desc }) {
+  // const a = classes;
   return (
     <div
       className={
