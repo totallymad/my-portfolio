@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 
 export default function SkillCard({ imgSrc, label, desc }) {
-  // const a = classes;
   return (
     <div
       className={
@@ -24,5 +23,4 @@ SkillCard.propTypes = {
   imgSrc: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
-  classes: PropTypes.string.isRequired,
 };

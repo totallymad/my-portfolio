@@ -48,6 +48,12 @@ body {
   @apply absolute bg-emerald-700 rounded-lg -z-10 transition-all duration-500;
 }
 
+/* TYPOGRAPHY */
+
+.subheader {
+  @apply text-2xl mb-3 font-bold bg-gradient-to-r from-emerald-500 to-emerald-50 bg-clip-text text-transparent;
+}
+
 /* BUTTONS */
 
 .menu-btn {
@@ -56,14 +62,20 @@ ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 active:scale-95 transi
 }
 
 .btn {
-  @apply max-w-max h-9 flex items-center gap-2 px-4
-  rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 ring-inset transition-colors;
+  @apply h-9 flex items-center justify-center gap-2
+ font-medium ring-1 ring-zinc-50/5 ring-inset transition-colors;
 }
 
 .btn-secondary {
-  @apply bg-zinc-50 text-zinc-900 active:bg-zinc-50/80 active:scale-95 transition;
+  @apply bg-emerald-50/90 text-zinc-900 active:scale-95 transition active:bg-emerald-600;
 }
 
-.swiper-button-prev {
-  color: #eee;
+.btn-text {
+  @apply bg-transparent text-emerald-50/80 active:scale-95 transition;
+}
+
+/* INPUT */
+
+.input-field {
+  @apply block p-2 w-full rounded-xl border bg-zinc-900 border-zinc-50/50 focus:outline-none focus:border-emerald-800 focus:ring-emerald-800 transition;
 }

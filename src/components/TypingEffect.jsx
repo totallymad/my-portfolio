@@ -55,7 +55,7 @@ export default function TypingEffect() {
   }, [letterIndex, isDeleting, currentPhraseIndex]); // Зависимости
 
   return (
-    <div className="text-4xl font-bold bg-gradient-to-r from-emerald-500 to-emerald-50 bg-clip-text text-transparent">
+    <div className="text-2xl lg:text-4xl md:text-left font-bold bg-gradient-to-r from-emerald-500 to-emerald-50 bg-clip-text text-transparent ">
       Я {displayedText}
     </div>
   );

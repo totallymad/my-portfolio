@@ -27,9 +27,9 @@ export default function Header() {
 
         <a
           href="#contact"
-          className="btn btn-secondary max-md:hidden md:justify-self-end"
+          className="btn btn-secondary px-4 rounded-xl max-md:hidden md:justify-self-end"
         >
-          Связь со мной
+          Связаться
         </a>
       </div>
     </header>

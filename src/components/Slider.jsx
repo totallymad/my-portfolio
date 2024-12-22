@@ -14,7 +14,7 @@ const Slider = () => {
         loop={true} // Зацикливаем слайдер
         autoplay={{
           delay: 3000, // Задержка в миллисекундах (3 секунды)
-          disableOnInteraction: true, // Продолжать автопрокрутку после взаимодействия
+          disableOnInteraction: false, // Продолжать автопрокрутку после взаимодействия
         }}
         breakpoints={{
           320: {

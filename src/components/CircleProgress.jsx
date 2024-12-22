@@ -3,20 +3,18 @@ import PropTypes from "prop-types";
 const CircleProgress = ({ percentage, label }) => {
   const radius = 50;
   const strokeWidth = 10;
-  const perimeter = 2 * Math.PI * radius; // Периметр круга
+  const perimeter = 2 * Math.PI * radius;
 
-  // Рассчитываем, сколько должно быть заполнено
   const strokeDashoffset = perimeter - (percentage / 100) * perimeter;
 
   return (
     <div className="flex flex-col items-center">
       <svg
         width="200"
-        height="200" // Увеличиваем размеры SVG
-        viewBox="0 0 200 200" // Увеличиваем размер области просмотра
+        height="200" 
+        viewBox="0 0 200 200" 
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* Фон круга */}
         <circle
           cx="100"
           cy="100"
@@ -26,7 +24,6 @@ const CircleProgress = ({ percentage, label }) => {
           fill="none"
         />
 
-        {/* Заполняющийся круг */}
         <circle
           cx="100"
           cy="100"
@@ -43,21 +40,20 @@ const CircleProgress = ({ percentage, label }) => {
           }}
         />
 
-        {/* Текст внутри круга */}
         <text
           x="50%"
           y="50%"
           textAnchor="middle"
           dominantBaseline="central"
-          fontSize="18" // Размер шрифта
+          fontSize="18" 
           fontWeight="bold"
-          fill="#333" // Цвет текста
+          fill="#eee" 
         >
           {percentage}%
         </text>
       </svg>
-      <div className="mt-3 text-sm font-semibold flex flex-col justify-center items-center">
-        <p className="text-center">{label}</p>
+      <div className="relative mb-10 text-sm font-semibold flex flex-col justify-center items-center">
+        <p className="text-center absolute -top-8">{label}</p>
       </div>
     </div>
   );

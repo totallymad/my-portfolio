@@ -42,7 +42,7 @@ export default function Skill() {
   return (
     <section className="section mt-10">
       <div className="container">
-        <h2 className="headline-2">Основные инструменты, которые я использую</h2>
+        <h2 className="subheader">Основные инструменты, которые я использую</h2>
         <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch]">
         Откройте для себя мощные инструменты и технологии, которые я использую для создания
         исключительных, высокопроизводительных веб-сайтов и приложений.
