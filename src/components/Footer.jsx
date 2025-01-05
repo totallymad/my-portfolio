@@ -67,8 +67,8 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-        <div className="mt-5 flex justify-between items-center">
-          <img width={40} height={40} src="/logo.svg" alt="логотип" />
+        <div className="mt-5 mb-5 flex justify-between items-center">
+          <img width={40} height={40} src="/logo.png" alt="логотип" />
           <p>©2024. Все права защищены</p>
         </div>
       </div>

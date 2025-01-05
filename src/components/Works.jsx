@@ -2,27 +2,27 @@ const works = [
   {
     imgSrc: "/project1.png",
     title: "Ballons",
-    link: "#",
+    link: "https://totallymad.github.io/ballons/",
     descr:
       "Интерактивный веб-сайт для бронирования увлекательных полетов на воздушных шарах с описанием маршрутов и галереей. ",
   },
   {
     imgSrc: "/project2.png",
     title: "Qucik Repair",
-    link: "#",
+    link: "https://totallymad.github.io/quick-repair/",
     descr:
       " Платформа для заказа услуг ремонта компьютеров с подробной информацией о неисправностях и стоимости услуг. ",
   },
   {
     imgSrc: "/project3.png",
     title: "Deleicious Deserts",
-    link: "#",
+    link: "https://delicious-desserts-react.netlify.app/",
     descr: "Удобное приложение для выбора и заказа свежих десертов.",
   },
   {
     imgSrc: "/project4.png",
     title: "Sneakers",
-    link: "#",
+    link: "https://best-sneakers.netlify.app/",
     descr: "Приложение для поиска, выбора и заказа брендовых кроссовок. ",
   },
 ];
@@ -48,6 +48,7 @@ export default function Works() {
                 <a
                   className="flex gap-3 mr-2 hover:text-emerald-700 hover:translate-x-2 transition mb-2"
                   href={item.link}
+                  target="_blank"
                 >
                   <span className="material-symbols-rounded text-4xl">
                     forward

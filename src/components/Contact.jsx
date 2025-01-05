@@ -49,7 +49,7 @@ export default function Contact() {
           </div>
 
           <form
-            action="https://formspree.io/f/xlddrybe"
+            action="https://getform.io/f/aollyorb"
             method="POST"
             className=""
           >
