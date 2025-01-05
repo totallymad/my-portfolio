@@ -8,7 +8,7 @@ import Skill from "./components/Skill";
 import Slider from "./components/Slider";
 import About from "./components/About";
 import Works from "./components/Works";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
