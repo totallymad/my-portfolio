@@ -79,3 +79,4 @@ ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 active:scale-95 transi
 .input-field {
   @apply block p-2 w-full rounded-xl border bg-zinc-900 border-zinc-50/50 focus:outline-none focus:border-emerald-800 focus:ring-emerald-800 transition;
 }
+

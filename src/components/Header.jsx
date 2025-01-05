@@ -1,17 +1,40 @@
 import { useState } from "react";
 import Navbar from "./Navbar";
+import PropTypes from "prop-types";
 
-export default function Header() {
+export default function Header({ handleSnow, snow }) {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 w-full h-20 flex items-center z-40 bg-gradient-to-b from-zinc-900 to-zinc-900/0">
       <div className="max-w-screen-2xl w-full mx-auto px-4 flex justify-between items-center md:px-6 md:grid md:grid-cols-[1fr,3fr,1fr]">
-        <h1>
+        <div className="flex gap-4 items-center">
           <a href="/" className="logo">
-            <img width={40} height={40} src="logo.png" alt="Ilya Kurak" />
+            <img width={60} height={60} src="logo.png" alt="Ilya Kurak" />
           </a>
-        </h1>
+          <div className="flex items-center justify-center gap-1">
+            <label className="relative inline-block w-10 h-6 cursor-pointer">
+              <input
+                type="checkbox"
+                className="absolute opacity-0 w-0 h-0"
+                checked={snow}
+                onChange={handleSnow}
+              />
+              <span
+                className={`block w-full h-full bg-gray-300 rounded-full transition-all duration-400 
+              ${snow ? "bg-emerald-500" : ""}`}
+              >
+                <span
+                  className={`block w-4 h-4 bg-white rounded-full absolute bottom-1 left-1 transition-all duration-400 
+              ${snow ? "translate-x-4" : ""}`}
+                ></span>
+              </span>
+            </label>
+            <p className="text-slate-100/80">
+              {snow ? "Выключить ❄️" : "Включить ❄️"}
+            </p>
+          </div>
+        </div>
 
         <div className="relative md:justify-self-center text">
           <button
@@ -35,3 +58,8 @@ export default function Header() {
     </header>
   );
 }
+
+Header.propTypes = {
+  handleSnow: PropTypes.func.isRequired, 
+  snow: PropTypes.bool.isRequired, 
+};
