@@ -21,8 +21,8 @@ export default function Header({ handleSnow, snow }) {
                 onChange={handleSnow}
               />
               <span
-                className={`block w-full h-full bg-gray-300 rounded-full transition-all duration-400 
-              ${snow ? "bg-emerald-500" : ""}`}
+                className={`block w-full h-full  rounded-full transition-all duration-400 
+              ${snow ? "bg-emerald-600" : "bg-gray-400"}`}
               >
                 <span
                   className={`block w-4 h-4 bg-white rounded-full absolute bottom-1 left-1 transition-all duration-400 
@@ -30,8 +30,12 @@ export default function Header({ handleSnow, snow }) {
                 ></span>
               </span>
             </label>
-            <p className="text-slate-100/80">
-              {snow ? "Выключить ❄️" : "Включить ❄️"}
+            <p
+              className={
+                snow ? "text-slate-50 text-xl" : "text-slate-50/20 text-xl"
+              }
+            >
+              ❄️
             </p>
           </div>
         </div>
@@ -60,6 +64,6 @@ export default function Header({ handleSnow, snow }) {
 }
 
 Header.propTypes = {
-  handleSnow: PropTypes.func.isRequired, 
-  snow: PropTypes.bool.isRequired, 
+  handleSnow: PropTypes.func.isRequired,
+  snow: PropTypes.bool.isRequired,
 };
